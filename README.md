@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @UberSweet
 - 👀 I’m interested in sport and Frontend
-- 🌱 I’m currently learning JS
+- 🌱 I’m currently learning JS and deep in HTML + CSS
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me - ubersweet@yandex.com
 
