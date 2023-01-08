@@ -155,3 +155,11 @@ img {
     }
   }
 }
+
+// section Drag & Drop
+
+.drag-drop {
+  &__content {
+    @extend .wrapper;
+  }
+}
