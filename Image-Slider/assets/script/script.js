@@ -1,8 +1,8 @@
-const upButton = document.querySelector('.up-button');
-const downButton = document.querySelector('.down-button');
+const upButton = document.querySelector('.button__up');
+const downButton = document.querySelector('.button__down');
 
-const sidebar = document.querySelector('.sidebar');
-const mainSlide = document.querySelector('.main-slide');
+const sidebar = document.querySelector('.slider__sidebar');
+const mainSlide = document.querySelector('.slider__main-slide');
 
 const container = document.querySelector('.container');
 
@@ -11,6 +11,14 @@ const slidesCount = mainSlide.querySelectorAll('div').length;
 let activeSlideIndex = 0;
 
 sidebar.style.top = `-${(slidesCount - 1) * 100}vh`;
+
+document.addEventListener('keydown', (event) => {
+  if (event.code == 'ArrowUp') {
+    ChangeSlides('up');
+  } else if (event.code == 'ArrowDown') {
+    ChangeSlides('down');
+  }
+});
 
 upButton.addEventListener('click', () => {
   ChangeSlides('up');
