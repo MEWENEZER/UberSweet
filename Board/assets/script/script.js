@@ -1,8 +1,6 @@
 const board = document.querySelector('#board');
 const SQUARES_NUMBER = 500;
 
-const color = chroma.random();
-
 for (let i = 0; i < SQUARES_NUMBER; i++) {
   const square = document.createElement('div');
   square.classList.add('square');
@@ -19,6 +17,7 @@ for (let i = 0; i < SQUARES_NUMBER; i++) {
 }
 
 function setColor(element) {
+  const color = chroma.random();
   element.style.backgroundColor = color;
   element.style.boxShadow = `0 0 5px ${color}, 0 0 10px ${color}`;
 }
